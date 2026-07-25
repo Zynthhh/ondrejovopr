@@ -1,1 +1,162 @@
-.
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondřejovo PR | Moderní agentura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #050505;
+            background-image: radial-gradient(at 0% 0%, #1e1b4b 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, #312e81 0, transparent 50%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(99, 102, 241, 0.15);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-2xl font-bold tracking-tighter">ONDŘEJOVO<span class="text-indigo-400">PR</span></span>
+            <div class="hidden md:flex gap-8 font-medium text-sm text-gray-300">
+                <a href="#services" class="hover:text-white transition">Služby</a>
+                <a href="#about" class="hover:text-white transition">O nás</a>
+                <a href="#contact" class="hover:text-white transition">Kontakt</a>
+            </div>
+            <a href="#contact" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-full font-medium transition text-sm">Zahájit projekt</a>
+        </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20">
+        <div class="blob -top-20 -left-20"></div>
+        <div class="blob bottom-0 right-0"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-tight">
+                    Vaše vize, <br><span class="gradient-text">naše strategie.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-10 max-w-lg">
+                    Pomáháme značkám definovat jejich hlas a ovládnout trh prostřednictvím precizně cíleného PR a inovativního storytellingu.
+                </p>
+                <div class="flex gap-4">
+                    <button class="px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition">Prozkoumat služby</button>
+                    <button class="px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/10 transition">Naše práce</button>
+                </div>
+            </div>
+            <div class="glass p-8 rounded-3xl relative">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center flex-col">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                        <span class="text-sm font-semibold">Růst</span>
+                    </div>
+                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center flex-col">
+                        <i data-lucide="shield" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                        <span class="text-sm font-semibold">Reputace</span>
+                    </div>
+                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center flex-col">
+                        <i data-lucide="mic" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                        <span class="text-sm font-semibold">Vliv</span>
+                    </div>
+                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center flex-col">
+                        <i data-lucide="globe" class="w-8 h-8 text-indigo-400 mb-2"></i>
+                        <span class="text-sm font-semibold">Reach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16 text-center">Co pro vás děláme?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition-all group">
+                    <i data-lucide="megaphone" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Media Relations</h3>
+                    <p class="text-gray-400">Budujeme vztahy s klíčovými novináři a redakcemi, abychom zajistili vaší značce autentický prostor v médiích.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition-all group">
+                    <i data-lucide="users" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Krizová komunikace</h3>
+                    <p class="text-gray-400">Stojíme při vás v těžkých časech. Rychlá reakce a správná strategie ochrání vaši reputaci před poškozením.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass p-8 rounded-3xl hover:border-indigo-500 transition-all group">
+                    <i data-lucide="zap" class="w-12 h-12 text-indigo-400 mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Digitální Storytelling</h3>
+                    <p class="text-gray-400">Transformujeme nudná fakta v příběhy, které lidé sdílejí a které si zapamatují.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-6xl md:text-8xl font-bold tracking-tighter gradient-text">JSEM ONDŘEJ</h2>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24">
+        <div class="max-w-4xl mx-auto px-6 glass p-12 rounded-3xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Začněme psát váš příběh</h2>
+                <p class="text-gray-400">Pošlete nám zprávu a ozveme se vám do 24 hodin.</p>
+            </div>
+            <form class="grid gap-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Jméno" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-indigo-500">
+                    <input type="email" placeholder="E-mail" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-indigo-500">
+                </div>
+                <textarea placeholder="Jak můžeme pomoci?" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:outline-none focus:border-indigo-500"></textarea>
+                <button type="button" onclick="submitForm()" class="w-full py-4 bg-indigo-600 rounded-xl font-bold hover:bg-indigo-500 transition">Odeslat zprávu</button>
+            </form>
+            <div id="status" class="hidden mt-6 text-center text-green-400 font-medium">Děkujeme za zprávu! Brzy se vám ozveme.</div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-gray-500 border-t border-white/5">
+        <p>&copy; 2026 Visionary PR Agency. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Simple form handling
+        function submitForm() {
+            const status = document.getElementById('status');
+            status.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
